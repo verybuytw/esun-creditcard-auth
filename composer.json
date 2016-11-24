@@ -1,0 +1,35 @@
+{
+    "name": "vb-payment/esunacq-creditcard-authorize",
+    "authors": [
+        {
+            "name": "Hughes",
+            "email": "hughes@pht-studio.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "~5.3 || ~5.2",
+        "nesbot/carbon": "~1.20",
+        "league/flysystem": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.5",
+        "symfony/process": "~3.0",
+        "symfony/var-dumper": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "VeryBuy\\Payment\\EsunBank\\CreditCard\\Order\\Authorize\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Payment\\EsunBank\\CreditCard\\Order\\Authorize\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
